@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prodcts</title>
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
+    
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/js/bootstrap.min.js" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="titel">My Products</div>
+ 
+     <!-- <div class="to">
+
+      <a href="#" class="linke"> change icon  </a>
+
+     </div> -->
+
+     <h1 class="masg animate__animated animate__backInLeft animate__slow	1s animate__bounceIn">
+      Welcome : 
+     </h1>
+       
+    
+
+
+        <div class="container py-5">
+        <div class="form-group ">
+            <label for="ProdcutName">ProdcutName :</label>
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Producte Name"
+            id="ProdcutName"
+          />
+        </div>
+        <div class="form-group ">
+            <label for="ProductPrice">ProductPrice :</label>
+          <input
+            class="form-control "
+            type="number"
+            placeholder="Producte Price"
+            id="ProductPrice"
+          />
+        </div>
+        <div class="form-group">
+            <label for="ProdcteCategory">ProdcteCategory :</label>
+          <input
+            class="form-control "
+            type="text"
+            placeholder="Producte Category"
+            id="ProdcteCategory"
+          />
+        </div>
+        <div class="form-group">
+            <label for="ProducteDescription">ProducteDescription :</label>
+          <textarea
+            class="form-control "
+            id="ProducteDescription"
+            placeholder="producte Desc"
+          ></textarea>
+        </div>
+
+        <button id="change" onclick="addProducte()" class="btn btn-outline-info"> add Producte</button>
+
+        </div>
+
+        <div class="container">
+          <input  onkeyup="searchProduct(this.value)" class="form-control" type="search" placeholder="Search Producte">
+            <table class="table mt-4">
+                <thead>
+                    <th>index</th>
+                    <th>ProductName</th>
+                    <th>productPrice</th>
+                    <th>productCategory</th>
+                    <th>productDesc	</th>
+                    <th>update</th>
+                    <th>delete</th>
+                  
+                </thead>
+                <tbody id="teBody">
+            
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+        
+    <script src="js/script.js"></script>
+  </body>
+</html>
